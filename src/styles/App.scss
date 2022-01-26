@@ -19,10 +19,16 @@ h2 {
 }
 
 .hi {
-  margin-top: 20vh;
+  margin-top: 10vh;
+  margin-bottom: 0;
+}
+
+.my-name {
+  margin-top: 0;
 }
 
 .name-break {
   // use this to keep from breaking on larger screens
+  // may be redundant depending on chosen font size
   display: none;
 }
