@@ -32,3 +32,29 @@ h2 {
   // may be redundant depending on chosen font size
   display: none;
 }
+
+nav {
+  font-size: 24px;
+  font-family: Roboto, Arial, sans-serif;
+  background-color: skyblue;
+}
+
+.offsite-links {
+  font-size: 30px;
+}
+
+.offsite-links a {
+  padding: 10px 20px;
+}
+
+.offsite-links :nth-child(1) {
+  border-right: 2px solid rgba(0,0,0,.2);
+  padding-left: 0;
+}
+
+nav a {
+  padding-right: 20px;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
