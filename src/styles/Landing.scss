@@ -1,0 +1,34 @@
+.landing {
+  background-image: radial-gradient(rgb(214, 232, 250), rgb(232, 238, 245));
+  overflow: hidden;
+}
+
+.hi {
+  margin-top: 10vh;
+}
+
+.name-break {
+  // use this to keep from breaking on larger screens
+  // may be redundant depending on chosen font size
+  display: none;
+}
+
+nav {
+  margin-top: 30vh;
+  font-size: 1rem;
+  font-family: Roboto, Arial, sans-serif;
+  background-color: skyblue;
+
+  li {
+    text-align: center;
+  }
+
+  a {
+    font-size: 2rem;
+    padding-right: 20px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    transition: all .2s;
+  }
+}

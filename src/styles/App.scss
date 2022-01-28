@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-size: 16px;
 }
 
 .main-content {
@@ -7,54 +8,19 @@ body {
 }
 
 .full-page {
+  box-sizing: border-box;
   height: 100vh;
   width: 100vw;
-}
-
-.landing {
-  background-image: radial-gradient(rgb(214, 232, 250), rgb(232, 238, 245));
-  overflow: hidden;
-  // box-shadow: inset 0 0 10em rgb(165, 203, 241);
 }
 
 h2 {
   font-family: Roboto, Arial, sans-serif;
   font-weight: 100;
   font-size: 42px;
+  font-size: 2.5em;
 }
 
-.hi {
-  margin-top: 10vh;
-}
-
-.name-break {
-  // use this to keep from breaking on larger screens
-  // may be redundant depending on chosen font size
-  display: none;
-}
-
-nav {
-  font-size: 24px;
-  font-family: Roboto, Arial, sans-serif;
-  background-color: skyblue;
-}
-
-.offsite-links {
-  font-size: 30px;
-}
-
-.offsite-links a {
-  padding: 10px 20px;
-}
-
-.offsite-links :nth-child(1) {
-  border-right: 2px solid rgba(0,0,0,.2);
-  padding-left: 0;
-}
-
-nav a {
-  padding-right: 20px;
-  text-decoration: none;
-  color: black;
-  cursor: pointer;
+ul {
+  list-style: none;
+  padding: 0;
 }

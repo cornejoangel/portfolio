@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../styles/Landing.scss';
 
 const Landing = (props) => {
   const { width } = props;
@@ -12,15 +13,21 @@ const Landing = (props) => {
         Angel Cornejo and I'm a software developer.
       </h2>
       <nav>
-        <div className="offsite-links">
-          <a href="#">Resume</a>
-          <a href="#">Github</a>
-        </div>
-        <div className="onsite-links">
-          <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
-          <a href="#contact">Contact</a>
-        </div>
+        <ul className="offsite-links">
+          <li>
+            <a href="#">Resume</a>
+          </li>
+          <li>
+            <a href="#">Github</a>
+          </li>
+        </ul>
+        {width >= 768 && (
+          <div className="onsite-links">
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+          </div>
+        )}
       </nav>
     </div>
   );
