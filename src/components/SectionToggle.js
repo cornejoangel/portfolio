@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../styles/SectionToggle.scss';
 
 const SectionToggle = (props) => {
   const { name, openStatus, toggleOpen } = props;
@@ -7,7 +8,7 @@ const SectionToggle = (props) => {
   return (
     <button
       type="button"
-      className={name}
+      className={`section-toggle ${name}`}
       onClick={(e) => toggleOpen(e, name, openStatus)}
     >
       {name}
