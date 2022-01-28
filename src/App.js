@@ -1,6 +1,7 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import useWindowWidth from './modules/useWindowWidth';
 import Landing from './components/Landing';
+import SectionToggle from './components/SectionToggle';
 import './styles/App.scss';
 
 const App = () => {
@@ -8,16 +9,21 @@ const App = () => {
   const [projectsOpen, setProjectsOpen] = useState(true);
   const [skillsOpen, setSkillsOpen] = useState(true);
   const [contactOpen, setContactOpen] = useState(true);
-  const projectsRef = useRef();
-  const skillsRef = useRef();
-  const contactRef = useRef();
-  projectsRef.current = projectsOpen;
-  skillsRef.current = skillsOpen;
-  contactRef.current = contactOpen;
 
-  const toggleOpen = (e, section) => {
-    const x = 1;
-    console.log('hey');
+  const toggleOpen = (e, name, openStatus) => {
+    switch (name) {
+      case 'projects':
+        setProjectsOpen(!openStatus);
+        break;
+      case 'skills':
+        setSkillsOpen(!openStatus);
+        break;
+      case 'contact':
+        setContactOpen(!openStatus);
+        break;
+      default:
+        break;
+    }
   };
 
   let page = '';
@@ -26,27 +32,44 @@ const App = () => {
     page = (
       <main>
         <Landing width={width} />
-        <div id="projects" className="main-content full-page">
-          <h2>Projects</h2>
-          <div className="project-card">
-            <h3>Battleship</h3>
+        <SectionToggle
+          name="projects"
+          openStatus={projectsOpen}
+          toggleOpen={toggleOpen}
+        />
+        {projectsOpen && (
+          <div>
+            <div className="project-card">
+              <h3>Battleship</h3>
+            </div>
+            <div className="project-card">
+              <h3>Movie Picker</h3>
+            </div>
+            <div className="project-card">
+              <h3>Article Clone</h3>
+            </div>
           </div>
-          <div className="project-card">
-            <h3>Movie Picker</h3>
-          </div>
-          <div className="project-card">
-            <h3>Article Clone</h3>
-          </div>
-        </div>
-        <div id="skills" className="main-content full-page">
-          <h2>Skills</h2>
+        )}
+        <SectionToggle
+          name="skills"
+          openStatus={skillsOpen}
+          toggleOpen={toggleOpen}
+        />
+        {skillsOpen && (
           <div className="skill-card">
             <h3>Javascript</h3>
           </div>
-        </div>
-        <div id="contact" className="main-content full-page">
-          <h2>Contact</h2>
-        </div>
+        )}
+        <SectionToggle
+          name="contact"
+          openStatus={contactOpen}
+          toggleOpen={toggleOpen}
+        />
+        {contactOpen && (
+          <form>
+            <input type="text" />
+          </form>
+        )}
       </main>
     );
   }
