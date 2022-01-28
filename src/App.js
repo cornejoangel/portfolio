@@ -1,10 +1,24 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import useWindowWidth from './modules/useWindowWidth';
 import Landing from './components/Landing';
 import './styles/App.scss';
 
 const App = () => {
   const width = useWindowWidth();
+  const [projectsOpen, setProjectsOpen] = useState(true);
+  const [skillsOpen, setSkillsOpen] = useState(true);
+  const [contactOpen, setContactOpen] = useState(true);
+  const projectsRef = useRef();
+  const skillsRef = useRef();
+  const contactRef = useRef();
+  projectsRef.current = projectsOpen;
+  skillsRef.current = skillsOpen;
+  contactRef.current = contactOpen;
+
+  const toggleOpen = (e, section) => {
+    const x = 1;
+    console.log('hey');
+  };
 
   let page = '';
 
