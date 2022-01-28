@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import useWindowWidth from './modules/useWindowWidth';
 import Landing from './components/Landing';
 import SectionToggle from './components/SectionToggle';
+import ProjectCard from './components/ProjectCard';
 import './styles/App.scss';
 
 const App = () => {
@@ -39,15 +40,9 @@ const App = () => {
             toggleOpen={toggleOpen}
           />
           <div className={`subsection ${projectsOpen ? 'open' : 'closed'}`}>
-            <div className="project-card">
-              <h3>Battleship</h3>
-            </div>
-            <div className="project-card">
-              <h3>Movie Picker</h3>
-            </div>
-            <div className="project-card">
-              <h3>Article Clone</h3>
-            </div>
+            <ProjectCard width={width} name="battleship" />
+            <ProjectCard width={width} name="movie picker" />
+            <ProjectCard width={width} name="article clone" />
           </div>
         </section>
         <section className="skills-section">
