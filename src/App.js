@@ -32,44 +32,50 @@ const App = () => {
     page = (
       <main>
         <Landing width={width} />
-        <SectionToggle
-          name="projects"
-          openStatus={projectsOpen}
-          toggleOpen={toggleOpen}
-        />
-        {projectsOpen && (
-          <div>
-            <div className="project-card">
-              <h3>Battleship</h3>
+        <section className="projects-section">
+          <SectionToggle
+            name="projects"
+            openStatus={projectsOpen}
+            toggleOpen={toggleOpen}
+          />
+          {projectsOpen && (
+            <div>
+              <div className="project-card">
+                <h3>Battleship</h3>
+              </div>
+              <div className="project-card">
+                <h3>Movie Picker</h3>
+              </div>
+              <div className="project-card">
+                <h3>Article Clone</h3>
+              </div>
             </div>
-            <div className="project-card">
-              <h3>Movie Picker</h3>
+          )}
+        </section>
+        <section className="skills-section">
+          <SectionToggle
+            name="skills"
+            openStatus={skillsOpen}
+            toggleOpen={toggleOpen}
+          />
+          {skillsOpen && (
+            <div className="skill-card">
+              <h3>Javascript</h3>
             </div>
-            <div className="project-card">
-              <h3>Article Clone</h3>
-            </div>
-          </div>
-        )}
-        <SectionToggle
-          name="skills"
-          openStatus={skillsOpen}
-          toggleOpen={toggleOpen}
-        />
-        {skillsOpen && (
-          <div className="skill-card">
-            <h3>Javascript</h3>
-          </div>
-        )}
-        <SectionToggle
-          name="contact"
-          openStatus={contactOpen}
-          toggleOpen={toggleOpen}
-        />
-        {contactOpen && (
-          <form>
-            <input type="text" />
-          </form>
-        )}
+          )}
+        </section>
+        <section className="contact-section">
+          <SectionToggle
+            name="contact"
+            openStatus={contactOpen}
+            toggleOpen={toggleOpen}
+          />
+          {contactOpen && (
+            <form>
+              <input type="text" />
+            </form>
+          )}
+        </section>
       </main>
     );
   }

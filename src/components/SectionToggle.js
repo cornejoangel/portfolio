@@ -6,13 +6,15 @@ const SectionToggle = (props) => {
   const { name, openStatus, toggleOpen } = props;
 
   return (
-    <button
-      type="button"
-      className={`section-toggle ${name}`}
-      onClick={(e) => toggleOpen(e, name, openStatus)}
-    >
-      {name}
-    </button>
+    <h2 className="section-heading">
+      <button
+        type="button"
+        className={`section-toggle ${name}`}
+        onClick={(e) => toggleOpen(e, name, openStatus)}
+      >
+        {name}
+      </button>
+    </h2>
   );
 };
 
