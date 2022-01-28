@@ -38,19 +38,17 @@ const App = () => {
             openStatus={projectsOpen}
             toggleOpen={toggleOpen}
           />
-          {projectsOpen && (
-            <div>
-              <div className="project-card">
-                <h3>Battleship</h3>
-              </div>
-              <div className="project-card">
-                <h3>Movie Picker</h3>
-              </div>
-              <div className="project-card">
-                <h3>Article Clone</h3>
-              </div>
+          <div className={`subsection ${projectsOpen ? 'open' : 'closed'}`}>
+            <div className="project-card">
+              <h3>Battleship</h3>
             </div>
-          )}
+            <div className="project-card">
+              <h3>Movie Picker</h3>
+            </div>
+            <div className="project-card">
+              <h3>Article Clone</h3>
+            </div>
+          </div>
         </section>
         <section className="skills-section">
           <SectionToggle
@@ -58,11 +56,9 @@ const App = () => {
             openStatus={skillsOpen}
             toggleOpen={toggleOpen}
           />
-          {skillsOpen && (
-            <div className="skill-card">
-              <h3>Javascript</h3>
-            </div>
-          )}
+          <div className={`subsection ${skillsOpen ? 'open' : 'closed'}`}>
+            <h3>Javascript</h3>
+          </div>
         </section>
         <section className="contact-section">
           <SectionToggle
@@ -70,11 +66,9 @@ const App = () => {
             openStatus={contactOpen}
             toggleOpen={toggleOpen}
           />
-          {contactOpen && (
-            <form>
-              <input type="text" />
-            </form>
-          )}
+          <form className={`subsection ${contactOpen ? 'open' : 'closed'}`}>
+            <input type="text" />
+          </form>
         </section>
       </main>
     );
