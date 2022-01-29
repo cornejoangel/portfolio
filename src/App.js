@@ -3,6 +3,7 @@ import useWindowWidth from './modules/useWindowWidth';
 import Landing from './components/Landing';
 import SectionToggle from './components/SectionToggle';
 import ProjectCard from './components/ProjectCard';
+import SkillCard from './components/SkillCard';
 import './styles/App.scss';
 
 const App = () => {
@@ -89,7 +90,14 @@ const App = () => {
         )}
         {width >= 768 && <h2>Skills</h2>}
         <div className={`subsection ${skillsOpen ? 'open' : 'closed'}`}>
-          <h3>Javascript</h3>
+          <SkillCard name="Javascript" />
+          <SkillCard name="React" />
+          <SkillCard name="HTML5" />
+          <SkillCard name="CSS3" />
+          <SkillCard name="SCSS" />
+          <SkillCard name="Github" />
+          <SkillCard name="Webpack" />
+          <SkillCard name="Trello" />
         </div>
       </section>
       <section className="contact-section">
