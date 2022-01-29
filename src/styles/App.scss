@@ -28,3 +28,10 @@ ul {
 .closed {
   display: none;
 }
+
+.skills-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 0.5em;
+  padding: 1em;
+}

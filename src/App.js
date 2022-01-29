@@ -62,7 +62,9 @@ const App = () => {
           />
         )}
         {width >= 768 && <h2>Projects</h2>}
-        <div className={`subsection ${projectsOpen ? 'open' : 'closed'}`}>
+        <div
+          className={`projects-container ${projectsOpen ? 'open' : 'closed'}`}
+        >
           <ProjectCard
             name="battleship"
             description={battleShipDescription}
@@ -89,7 +91,7 @@ const App = () => {
           />
         )}
         {width >= 768 && <h2>Skills</h2>}
-        <div className={`subsection ${skillsOpen ? 'open' : 'closed'}`}>
+        <div className={`skills-container ${skillsOpen ? 'open' : 'closed'}`}>
           <SkillCard name="Javascript" />
           <SkillCard name="React" />
           <SkillCard name="HTML5" />
@@ -109,7 +111,9 @@ const App = () => {
           />
         )}
         {width >= 768 && <h2>Contact</h2>}
-        <form className={`subsection ${contactOpen ? 'open' : 'closed'}`}>
+        <form
+          className={`contact-container ${contactOpen ? 'open' : 'closed'}`}
+        >
           <input type="text" />
         </form>
       </section>
