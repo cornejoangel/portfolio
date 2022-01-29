@@ -27,6 +27,26 @@ const App = () => {
     }
   };
 
+  const battleShipDescription =
+    'An Implementation of the classic game Battleship.';
+  const moviePickerDescription =
+    'A single page app that will pick a movie for you to watch based on two categories you choose and one category the app chooses for you.';
+  const articleCloneDescription = 'A clone of an article from NewScientist';
+
+  const battleshipFeatures = [
+    'Responsive',
+    'Intuitive drag-and-drop interface using react-dnd',
+    'AI algorithm that knows when it has gotten a hit and will search for the rest of the ship until it is sunk',
+  ];
+  const moviePickerFeatures = [
+    'Responsive',
+    'Implements IMDB API to search for movies',
+  ];
+  const articleCloneFeatures = [
+    'Demonstrates ability to create a professional look',
+    'Native HTML5 and CSS3',
+  ];
+
   let page = '';
 
   page = (
@@ -42,9 +62,21 @@ const App = () => {
         )}
         {width >= 768 && <h2>Projects</h2>}
         <div className={`subsection ${projectsOpen ? 'open' : 'closed'}`}>
-          <ProjectCard width={width} name="battleship" />
-          <ProjectCard width={width} name="movie picker" />
-          <ProjectCard width={width} name="article clone" />
+          <ProjectCard
+            name="battleship"
+            description={battleShipDescription}
+            features={battleshipFeatures}
+          />
+          <ProjectCard
+            name="movie picker"
+            description={moviePickerDescription}
+            features={moviePickerFeatures}
+          />
+          <ProjectCard
+            name="article clone"
+            description={articleCloneDescription}
+            features={articleCloneFeatures}
+          />
         </div>
       </section>
       <section className="skills-section">
