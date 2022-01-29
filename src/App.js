@@ -4,6 +4,7 @@ import Landing from './components/Landing';
 import SectionToggle from './components/SectionToggle';
 import ProjectCard from './components/ProjectCard';
 import SkillCard from './components/SkillCard';
+import ContactForm from './components/ContactForm';
 import './styles/App.scss';
 
 const App = () => {
@@ -111,11 +112,9 @@ const App = () => {
           />
         )}
         {width >= 768 && <h2>Contact</h2>}
-        <form
-          className={`contact-container ${contactOpen ? 'open' : 'closed'}`}
-        >
-          <input type="text" />
-        </form>
+        <div className={`contact-container ${contactOpen ? 'open' : 'closed'}`}>
+          <ContactForm width={width} />
+        </div>
       </section>
     </main>
   );
