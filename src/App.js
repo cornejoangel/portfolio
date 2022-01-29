@@ -29,49 +29,53 @@ const App = () => {
 
   let page = '';
 
-  if (width < 768) {
-    page = (
-      <main>
-        <Landing width={width} />
-        <section className="projects-section">
+  page = (
+    <main>
+      <Landing width={width} />
+      <section className="projects-section">
+        {width < 768 && (
           <SectionToggle
             name="projects"
             openStatus={projectsOpen}
             toggleOpen={toggleOpen}
           />
-          <div className={`subsection ${projectsOpen ? 'open' : 'closed'}`}>
-            <ProjectCard width={width} name="battleship" />
-            <ProjectCard width={width} name="movie picker" />
-            <ProjectCard width={width} name="article clone" />
-          </div>
-        </section>
-        <section className="skills-section">
+        )}
+        {width >= 768 && <h2>Projects</h2>}
+        <div className={`subsection ${projectsOpen ? 'open' : 'closed'}`}>
+          <ProjectCard width={width} name="battleship" />
+          <ProjectCard width={width} name="movie picker" />
+          <ProjectCard width={width} name="article clone" />
+        </div>
+      </section>
+      <section className="skills-section">
+        {width < 768 && (
           <SectionToggle
             name="skills"
             openStatus={skillsOpen}
             toggleOpen={toggleOpen}
           />
-          <div className={`subsection ${skillsOpen ? 'open' : 'closed'}`}>
-            <h3>Javascript</h3>
-          </div>
-        </section>
-        <section className="contact-section">
+        )}
+        {width >= 768 && <h2>Skills</h2>}
+        <div className={`subsection ${skillsOpen ? 'open' : 'closed'}`}>
+          <h3>Javascript</h3>
+        </div>
+      </section>
+      <section className="contact-section">
+        {width < 768 && (
           <SectionToggle
             name="contact"
             openStatus={contactOpen}
             toggleOpen={toggleOpen}
           />
-          <form className={`subsection ${contactOpen ? 'open' : 'closed'}`}>
-            <input type="text" />
-          </form>
-        </section>
-      </main>
-    );
-  }
+        )}
+        {width >= 768 && <h2>Contact</h2>}
+        <form className={`subsection ${contactOpen ? 'open' : 'closed'}`}>
+          <input type="text" />
+        </form>
+      </section>
+    </main>
+  );
 
-  if (width >= 768) {
-    page = <div>hello world {width} </div>;
-  }
   return page;
 };
 
