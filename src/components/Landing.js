@@ -12,7 +12,7 @@ const Landing = (props) => {
         My name is <br className="name-break" />
         Angel Cornejo and I'm a software developer.
       </h2>
-      <nav>
+      <nav className="landing-links">
         <ul className="offsite-links">
           <li>
             <a href="#">Resume</a>

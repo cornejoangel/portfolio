@@ -18,8 +18,10 @@ const ProjectCard = (props) => {
       <img src="#" alt={name} />
       <p className="description">{description}</p>
       <ul className="features">{featureList}</ul>
-      <a href="#">View Live</a>
-      <a href="#">Source Code</a>
+      <nav className="project-links">
+        <a href="#">View Live</a>
+        <a href="#">Source Code</a>
+      </nav>
     </div>
   );
 

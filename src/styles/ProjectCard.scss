@@ -1,3 +1,41 @@
 .project-card {
   border: 1px solid black;
+  padding: 1.5em;
+  font-family: Roboto, Arial, sans-serif;
+
+  .project-name {
+    text-transform: capitalize;
+    font-size: 1.25em;
+    text-align: center;
+  }
+
+  img {
+    display: block;
+    width: 200px;
+    border: 1px solid black;
+    margin: 0 auto;
+  }
+
+  .features {
+    list-style: disc ;
+    margin: .5em 1.5em;
+
+    li {
+      padding: .5em 0;
+    }
+  }
+
+  .project-links {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2em;
+    a {
+      text-decoration: none;
+      color: skyblue;
+    }
+  }
+}
+
+.description {
+
 }
