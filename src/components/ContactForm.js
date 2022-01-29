@@ -8,7 +8,9 @@ const ContactForm = (props) => {
   let form = '';
   form = (
     <form className="contact-form">
-      <label htmlFor="contact-email">Send me a message</label>
+      <label className="email-label" htmlFor="contact-email">
+        Send me a message
+      </label>
       <input
         type="email"
         id="contact-email"
@@ -16,7 +18,7 @@ const ContactForm = (props) => {
         required
       />
       <textarea id="contact-message" required />
-      <input type="submit" value="send" />
+      <input type="submit" id="submit" value="Send" />
     </form>
   );
 
