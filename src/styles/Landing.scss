@@ -1,20 +1,17 @@
 .landing {
   background-image: radial-gradient(rgb(214, 232, 250), rgb(232, 238, 245));
-  overflow: hidden;
+  padding: 2em;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
 }
 
 .hi {
   margin-top: 10vh;
 }
 
-.name-break {
-  // use this to keep from breaking on larger screens
-  // may be redundant depending on chosen font size
-  display: none;
-}
-
 .landing-links {
-  margin-top: 30vh;
+  margin-top: 5em;
   font-size: 1rem;
   font-family: Roboto, Arial, sans-serif;
   background-color: skyblue;

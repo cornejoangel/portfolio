@@ -6,11 +6,10 @@ const Landing = (props) => {
   const { width } = props;
   let landing = '';
   landing = (
-    <div className="landing main-content full-page">
+    <div className="landing">
       <h2 className="hi">Hi.</h2>
       <h2 className="my-name">
-        My name is <br className="name-break" />
-        Angel Cornejo and I'm a software developer.
+        My name is Angel Cornejo and I'm a software developer.
       </h2>
       <nav className="landing-links">
         <ul className="offsite-links">

@@ -97,7 +97,7 @@ const App = () => {
           <SkillCard name="React" />
           <SkillCard name="HTML5" />
           <SkillCard name="CSS3" />
-          <SkillCard name="SCSS" />
+          <SkillCard name="SASS" />
           <SkillCard name="Github" />
           <SkillCard name="Webpack" />
           <SkillCard name="Trello" />
