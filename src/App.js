@@ -54,6 +54,26 @@ const App = () => {
   page = (
     <main>
       <Landing width={width} />
+      <section className="skills-section">
+        {width < 768 && (
+          <SectionToggle
+            name="skills"
+            openStatus={skillsOpen}
+            toggleOpen={toggleOpen}
+          />
+        )}
+        {width >= 768 && <h2>Skills</h2>}
+        <div className={`skills-container ${skillsOpen ? 'open' : 'closed'}`}>
+          <SkillCard name="Javascript" />
+          <SkillCard name="React" />
+          <SkillCard name="HTML5" />
+          <SkillCard name="CSS3" />
+          <SkillCard name="SASS" />
+          <SkillCard name="Github" />
+          <SkillCard name="Webpack" />
+          <SkillCard name="Trello" />
+        </div>
+      </section>
       <section className="projects-section">
         {width < 768 && (
           <SectionToggle
@@ -81,26 +101,6 @@ const App = () => {
             description={articleCloneDescription}
             features={articleCloneFeatures}
           />
-        </div>
-      </section>
-      <section className="skills-section">
-        {width < 768 && (
-          <SectionToggle
-            name="skills"
-            openStatus={skillsOpen}
-            toggleOpen={toggleOpen}
-          />
-        )}
-        {width >= 768 && <h2>Skills</h2>}
-        <div className={`skills-container ${skillsOpen ? 'open' : 'closed'}`}>
-          <SkillCard name="Javascript" />
-          <SkillCard name="React" />
-          <SkillCard name="HTML5" />
-          <SkillCard name="CSS3" />
-          <SkillCard name="SASS" />
-          <SkillCard name="Github" />
-          <SkillCard name="Webpack" />
-          <SkillCard name="Trello" />
         </div>
       </section>
       <section className="contact-section">
