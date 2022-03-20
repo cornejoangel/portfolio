@@ -12,21 +12,8 @@ const Landing = (props) => {
         My name is Angel Cornejo and I'm a software developer.
       </h2>
       <nav className="landing-links">
-        <ul className="offsite-links">
-          <li>
-            <a href="#">Resume</a>
-          </li>
-          <li>
-            <a href="#">Github</a>
-          </li>
-        </ul>
-        {width >= 768 && (
-          <div className="onsite-links">
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-          </div>
-        )}
+        <a href="#">Resume</a>
+        <a href="#">Github</a>
       </nav>
     </div>
   );
