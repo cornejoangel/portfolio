@@ -6,7 +6,8 @@ const SectionToggle = (props) => {
   const { name, openStatus, toggleOpen } = props;
 
   return (
-    <h2 className="section-heading">
+    // <h2 className="section-heading">
+    <h2 className={`section-heading ${name}-heading`}>
       <button
         type="button"
         className={`section-toggle ${name}`}

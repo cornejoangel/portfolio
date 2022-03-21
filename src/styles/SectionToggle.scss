@@ -1,5 +1,7 @@
+@use 'base';
+
 .section-heading {
-  margin: 0;
+  margin: base.$pad-lg 0;
   box-sizing: border-box;
 }
 
@@ -9,10 +11,27 @@
   width: 100%;
   text-align: left;
   padding: 0;
-  font-family: Roboto, Arial, sans-serif;
   font-family: 'Montserrat', Arial, sans-serif;
   font-size: 2rem;
   font-weight: 300;
   text-transform: capitalize;
   display: block;
+}
+
+.section-heading::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  background: #a1a2a3;
+  width: 50%;
+  right: 10%;
+  margin-top: -1rem;
+}
+
+.projects-heading::after {
+  width: 35%;
+}
+
+.contact-heading::after {
+  width: 35%;
 }

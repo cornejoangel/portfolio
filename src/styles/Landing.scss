@@ -1,7 +1,7 @@
 @use 'base';
 
 .landing {
-  padding: 2em;
+  margin-bottom: base.$pad;
   box-sizing: border-box;
   h2 {
     font-weight: 500;

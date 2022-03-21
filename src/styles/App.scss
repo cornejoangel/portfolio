@@ -1,6 +1,9 @@
+@use 'base';
+
 body {
   margin: 0;
   font-size: 16px;
+  padding: base.$pad;
 }
 
 h2 {
