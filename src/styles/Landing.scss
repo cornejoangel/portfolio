@@ -1,9 +1,6 @@
-$bg: #f9f8f7;
-$accent: hsl(220deg, 80%, 60%);
+@use 'base';
 
 .landing {
-  background-image: radial-gradient(rgb(214, 232, 250), rgb(232, 238, 245));
-  background: $bg;
   padding: 2em;
   box-sizing: border-box;
   h2 {
@@ -29,19 +26,18 @@ $accent: hsl(220deg, 80%, 60%);
     display: inline-block;
     font-size: 1rem;
     text-decoration: none;
-    color: black;
     cursor: pointer;
     transition: all .2s;
     background: inherit;
-    border: 2px solid $accent;
     border-radius: 3px;
     padding: .5rem 0;
     width: 7rem;
     text-align: center;
+    background-color: base.$accent;
+    color: white;
   }
 
   a:hover {
-    background-color: $accent;
-    color: white;
+    background-color: base.$accent-hover;
   }
 }
