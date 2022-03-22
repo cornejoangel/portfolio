@@ -42,22 +42,29 @@ const App = () => {
 
   const battleShipDescription =
     'An Implementation of the classic game Battleship.';
-  const moviePickerDescription =
-    'A single page app that will pick a movie for you to watch based on two categories you choose and one category the app chooses for you.';
+  const kanbanDescription = 'A Trello inspired kanban board.';
   const articleCloneDescription = 'A clone of an article from NewScientist';
 
   const battleshipFeatures = [
     'Responsive',
-    'Intuitive drag-and-drop interface using react-dnd',
-    'AI algorithm that knows when it has gotten a hit and will search for the rest of the ship until it is sunk',
+    'Intuitive drag-and-drop interface for ship placement using react-dnd',
+    'AI algorithm that knows when it has gotten a hit and will search for the rest of your ship until it is sunk',
+    'Developed using test-driven-development with Jest',
   ];
-  const moviePickerFeatures = [
-    'Responsive',
-    'Implements IMDB API to search for movies',
+  const kanbanFeatures = [
+    'Made with React and styled with Sass',
+    'Users can create lists and cards',
+    'Intuitive interface utilizing react-beautiful-dnd library',
+    'Switch the order of lists, move cards within a list or to another',
+    'List and card names may be edited, card descriptions can be set in a pop-up screen',
+    'Cards and lists easily deleted',
+    'Entire app state saved to local storage',
+    'Dark mode',
   ];
   const articleCloneFeatures = [
-    'Demonstrates ability to create a professional look',
+    'Accurate recreation of a professional production',
     'Native HTML5 and CSS3',
+    'Demonstrates solid fundamentals of HTML and CSS',
   ];
 
   let page = '';
@@ -113,9 +120,9 @@ const App = () => {
             features={battleshipFeatures}
           />
           <ProjectCard
-            name="movie picker"
-            description={moviePickerDescription}
-            features={moviePickerFeatures}
+            name="kanban board"
+            description={kanbanDescription}
+            features={kanbanFeatures}
           />
           <ProjectCard
             name="article clone"
