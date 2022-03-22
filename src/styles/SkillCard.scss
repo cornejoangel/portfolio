@@ -1,16 +1,52 @@
 .skill-card {
-  border: 1px solid black;
   width: fit-content;
   margin: auto;
   font-family: Roboto, Arial, sans-serif;
 
   h3 {
-    font-size: 1.2em;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-align: center;
   }
+}
 
-  img {
-    display: block;
-    width: 100px;
-    border: 1px solid red;
-  }
+
+.logo {
+  font-size: 5rem;
+}
+
+.js-logo {
+  color: #f0db4f;
+}
+
+.react-logo {
+  color: #61dbfb; 
+}
+
+.html-logo {
+  color: #e54c21;
+}
+
+.css-logo {
+  color: #264de4;
+}
+
+.sass-logo {
+  color: #ce679a;
+}
+
+.github-logo {
+  color: #171515;
+}
+
+.webpack-logo {
+  color: #8ed5fa;
+}
+
+.jest-logo {
+  color: #15c213;
+}
+
+.trello-logo {
+  color: #0087d6;
 }

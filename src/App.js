@@ -1,4 +1,15 @@
 import React, { useState } from 'react';
+import {
+  SiJavascript,
+  SiReact,
+  SiHtml5,
+  SiCss3,
+  SiGithub,
+  SiWebpack,
+  SiJest,
+  SiTrello,
+} from 'react-icons/si';
+import { FaSass } from 'react-icons/fa';
 import useWindowWidth from './modules/useWindowWidth';
 import Landing from './components/Landing';
 import SectionToggle from './components/SectionToggle';
@@ -50,6 +61,15 @@ const App = () => {
   ];
 
   let page = '';
+  const jsLogo = <SiJavascript className="logo js-logo" />;
+  const reactLogo = <SiReact className="logo react-logo" />;
+  const htmlLogo = <SiHtml5 className="logo html-logo" />;
+  const cssLogo = <SiCss3 className="logo css-logo" />;
+  const sassLogo = <FaSass className="logo sass-logo" />;
+  const githubLogo = <SiGithub className="logo github-logo" />;
+  const webpackLogo = <SiWebpack className="logo webpack-logo" />;
+  const jestLogo = <SiJest className="logo jest-logo" />;
+  const trelloLogo = <SiTrello className="logo trello-logo" />;
 
   page = (
     <main>
@@ -64,14 +84,15 @@ const App = () => {
         )}
         {width >= 768 && <h2>Skills</h2>}
         <div className={`skills-container ${skillsOpen ? 'open' : 'closed'}`}>
-          <SkillCard name="Javascript" />
-          <SkillCard name="React" />
-          <SkillCard name="HTML5" />
-          <SkillCard name="CSS3" />
-          <SkillCard name="SASS" />
-          <SkillCard name="Github" />
-          <SkillCard name="Webpack" />
-          <SkillCard name="Trello" />
+          <SkillCard name="Javascript" logo={jsLogo} />
+          <SkillCard name="React" logo={reactLogo} />
+          <SkillCard name="HTML5" logo={htmlLogo} />
+          <SkillCard name="CSS3" logo={cssLogo} />
+          <SkillCard name="SASS" logo={sassLogo} />
+          <SkillCard name="Github" logo={githubLogo} />
+          <SkillCard name="Webpack" logo={webpackLogo} />
+          <SkillCard name="Jest" logo={jestLogo} />
+          <SkillCard name="Trello" logo={trelloLogo} />
         </div>
       </section>
       <section className="projects-section">

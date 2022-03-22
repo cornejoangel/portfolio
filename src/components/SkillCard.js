@@ -3,17 +3,14 @@ import PropTypes from 'prop-types';
 import '../styles/SkillCard.scss';
 
 const SkillCard = (props) => {
-  const { name, src } = props;
+  const { name, logo } = props;
 
   let card = '';
 
   card = (
     <div className="skill-card">
-      <img src="#" alt={`${name} logo`} />
-      <h3 className="skill-name">
-        {name}
-        {src}
-      </h3>
+      {logo}
+      <h3 className="skill-name">{name}</h3>
     </div>
   );
 
@@ -22,7 +19,7 @@ const SkillCard = (props) => {
 
 SkillCard.propTypes = {
   name: PropTypes.string,
-  src: PropTypes.string,
+  logo: PropTypes.element,
 };
 
 export default SkillCard;
