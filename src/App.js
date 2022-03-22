@@ -118,16 +118,19 @@ const App = () => {
             name="battleship"
             description={battleShipDescription}
             features={battleshipFeatures}
+            width={width}
           />
           <ProjectCard
             name="kanban board"
             description={kanbanDescription}
             features={kanbanFeatures}
+            width={width}
           />
           <ProjectCard
             name="article clone"
             description={articleCloneDescription}
             features={articleCloneFeatures}
+            width={width}
           />
         </div>
       </section>
