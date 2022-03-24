@@ -35,9 +35,37 @@
     text-align: center;
     background-color: base.$accent;
     color: white;
+    box-sizing: border-box;
+    border: 2px solid base.$accent;
   }
 
   a:hover {
     background-color: base.$accent-hover;
+    border: 2px solid base.$accent-hover;
+    color: white;
+    box-shadow:
+      0px 0.5px 3.6px rgba(0, 0, 0, 0.024),
+      0px 1.3px 10px rgba(0, 0, 0, 0.035),
+      0px 3px 24.1px rgba(0, 0, 0, 0.046),
+      0px 10px 80px rgba(0, 0, 0, 0.07)
+    ;
+  }
+
+  .github-link {
+    color: base.$accent;
+    background-color: white;
+    border: 2px solid base.$accent;
+  }
+
+  .github-link:hover {
+    color: base.$accent-hover;
+    background-color: white;
+    border: 2px solid base.$accent-hover;
+    box-shadow:
+      0px 0.5px 3.6px rgba(0, 0, 0, 0.024),
+      0px 1.3px 10px rgba(0, 0, 0, 0.035),
+      0px 3px 24.1px rgba(0, 0, 0, 0.046),
+      0px 10px 80px rgba(0, 0, 0, 0.07)
+    ;
   }
 }
