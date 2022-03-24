@@ -10,6 +10,9 @@ import {
   SiTrello,
 } from 'react-icons/si';
 import { FaSass } from 'react-icons/fa';
+import battleship from './images/battleship.jpg';
+import kanban from './images/kanban.jpg';
+import article from './images/article-clone.jpg';
 import useWindowWidth from './modules/useWindowWidth';
 import Landing from './components/Landing';
 import SectionToggle from './components/SectionToggle';
@@ -62,7 +65,7 @@ const App = () => {
     'Dark mode',
   ];
   const articleCloneFeatures = [
-    'Accurate recreation of a professional production',
+    'Accurate recreation of a professional UI',
     'Native HTML5 and CSS3',
     'Demonstrates solid fundamentals of HTML and CSS',
   ];
@@ -119,18 +122,21 @@ const App = () => {
             description={battleShipDescription}
             features={battleshipFeatures}
             width={width}
+            src={battleship}
           />
           <ProjectCard
             name="kanban board"
             description={kanbanDescription}
             features={kanbanFeatures}
             width={width}
+            src={kanban}
           />
           <ProjectCard
             name="article clone"
             description={articleCloneDescription}
             features={articleCloneFeatures}
             width={width}
+            src={article}
           />
         </div>
       </section>

@@ -7,14 +7,16 @@
 
   .project-name {
     text-transform: capitalize;
-    font-size: 1.25em;
+    font-size: 1.5em;
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-top: 0;
   }
 
   img {
     display: block;
-    width: 200px;
-    border: 1px solid black;
+    width: 100%;
     margin: 0 auto;
   }
 

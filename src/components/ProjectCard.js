@@ -5,7 +5,7 @@ import { SiGithub } from 'react-icons/si';
 import '../styles/ProjectCard.scss';
 
 const ProjectCard = (props) => {
-  const { name, description, features, width } = props;
+  const { name, description, features, width, src } = props;
 
   const featureList = [];
   for (let i = 0; i < features.length; i += 1) {
@@ -17,7 +17,7 @@ const ProjectCard = (props) => {
   card = (
     <div className="project-card">
       <h3 className="project-name">{name}</h3>
-      <img src="#" alt={name} />
+      <img src={src} alt={name} />
       <p className="description">{description}</p>
       <ul className="features">{featureList}</ul>
       <nav className="project-links">
@@ -55,6 +55,7 @@ ProjectCard.propTypes = {
   description: PropTypes.string,
   features: PropTypes.array,
   width: PropTypes.number,
+  src: PropTypes.string,
 };
 
 export default ProjectCard;
