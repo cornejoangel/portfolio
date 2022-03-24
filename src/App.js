@@ -62,7 +62,7 @@ const App = () => {
     'List and card names may be edited, card descriptions can be set in a pop-up screen',
     'Cards and lists easily deleted',
     'Entire app state saved to local storage',
-    'Dark mode',
+    'Optional dark mode',
   ];
   const articleCloneFeatures = [
     'Accurate recreation of a professional UI',
