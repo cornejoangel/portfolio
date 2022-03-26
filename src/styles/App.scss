@@ -30,7 +30,7 @@ ul {
 }
 
 .about-text {
-  font-family: Roboto, Arial, sans-serif;
+  font-family: Lato, Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.5rem;
 }
@@ -55,6 +55,8 @@ ul {
 @media (min-width: 768px) {
   .about-section {
     padding: base.$pad;
+    width: 60%;
+    margin: base.$pad-lg auto;
   }
 
   .about {
@@ -69,10 +71,17 @@ ul {
     height: min-content;
     border-left: 2px solid base.$accent-3;
     padding: base.$pad;
+    line-height: 2rem;
   }
 
   .skills-wrapper {
     width: 50%;
   }
 
+}
+
+@media (min-width: 769px) and (max-width: 1800px) {
+  .about-section {
+    width: 80%;
+  }
 }
