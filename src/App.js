@@ -97,19 +97,19 @@ const App = () => {
           <div className="about-text">
             <p>
               During my time at University I was exposed to a wide range of
-              topics. My two favorite courses being Algorithms and Operating
-              Systems: they allowed me to indulge my interest in seeing just how
-              optimal you can make something and looking at how an enormously
-              complex machine with many moving parts can work, respectively.
+              topics, my two favorite courses being Algorithms and Operating
+              Systems. Algorithms allowed me to indulge my interest in seeing
+              just how optimal you can make something. Operating Systems helped
+              me to see how an enormously complex machine with many moving parts
+              can work.
             </p>
             <p>
               Outside of school my primary interest was competitive video
               gaming, and I found myself wishing there were better web resources
-              for my most played games. So it seems only natural that I have
-              found myself falling in love with web development! Front-End in
-              particular is the area I'm most interested in right now but who
-              knows where my insatiable hunger to grow as a developer will take
-              me.
+              for my most played games. It seems only natural then that I have
+              found myself so drawn to web development! Front-End in particular
+              is the area I'm most interested in right now, but who knows where
+              my insatiable drive to grow as a developer will take me.
             </p>
           </div>
           <div className="skills-wrapper">
