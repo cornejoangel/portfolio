@@ -24,7 +24,7 @@ import './styles/App.scss';
 const App = () => {
   const width = useWindowWidth();
   const [projectsOpen, setProjectsOpen] = useState(true);
-  const [skillsOpen, setSkillsOpen] = useState(true);
+  const [aboutOpen, setAboutOpen] = useState(true);
   const [contactOpen, setContactOpen] = useState(true);
 
   const toggleOpen = (e, name, openStatus) => {
@@ -32,8 +32,8 @@ const App = () => {
       case 'projects':
         setProjectsOpen(!openStatus);
         break;
-      case 'skills':
-        setSkillsOpen(!openStatus);
+      case 'about':
+        setAboutOpen(!openStatus);
         break;
       case 'contact':
         setContactOpen(!openStatus);
@@ -84,25 +84,48 @@ const App = () => {
   page = (
     <main>
       <Landing width={width} />
-      <section className="skills-section">
+      <section className="about-section">
         {width < 768 && (
           <SectionToggle
-            name="skills"
-            openStatus={skillsOpen}
+            name="about"
+            openStatus={aboutOpen}
             toggleOpen={toggleOpen}
           />
         )}
-        {width >= 768 && <h2>Skills</h2>}
-        <div className={`skills-container ${skillsOpen ? 'open' : 'closed'}`}>
-          <SkillCard name="Javascript" logo={jsLogo} />
-          <SkillCard name="React" logo={reactLogo} />
-          <SkillCard name="HTML5" logo={htmlLogo} />
-          <SkillCard name="CSS3" logo={cssLogo} />
-          <SkillCard name="SASS" logo={sassLogo} />
-          <SkillCard name="Github" logo={githubLogo} />
-          <SkillCard name="Webpack" logo={webpackLogo} />
-          <SkillCard name="Jest" logo={jestLogo} />
-          <SkillCard name="Trello" logo={trelloLogo} />
+        {width >= 768 && <h2>About</h2>}
+        <div className={`about ${aboutOpen ? 'open' : 'closed'}`}>
+          <div className="about-text">
+            <p>
+              During my time at University I was exposed to a wide range of
+              topics. My two favorite courses being Algorithms and Operating
+              Systems: they allowed me to indulge my interest in seeing just how
+              optimal you can make something and looking at how an enormously
+              complex machine with many moving parts can work, respectively.
+            </p>
+            <p>
+              Outside of school my primary interest was competitive video
+              gaming, and I found myself wishing there were better web resources
+              for my most played games. So it seems only natural that I have
+              found myself falling in love with web development! Front-End in
+              particular is the area I'm most interested in right now but who
+              knows where my insatiable hunger to grow as a developer will take
+              me.
+            </p>
+          </div>
+          <div className="skills-wrapper">
+            <h3>My Primary Skills</h3>
+            <div className="skills-container">
+              <SkillCard name="Javascript" logo={jsLogo} />
+              <SkillCard name="React" logo={reactLogo} />
+              <SkillCard name="HTML5" logo={htmlLogo} />
+              <SkillCard name="CSS3" logo={cssLogo} />
+              <SkillCard name="SASS" logo={sassLogo} />
+              <SkillCard name="Github" logo={githubLogo} />
+              <SkillCard name="Webpack" logo={webpackLogo} />
+              <SkillCard name="Jest" logo={jestLogo} />
+              <SkillCard name="Trello" logo={trelloLogo} />
+            </div>
+          </div>
         </div>
       </section>
       <section className="projects-section">

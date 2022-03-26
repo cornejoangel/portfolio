@@ -28,3 +28,51 @@ ul {
   flex-wrap: wrap;
   justify-content: center;
 }
+
+.about-text {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.skills-wrapper {
+  border: 2px solid #ebebeb;
+  border-radius: 3px;
+
+  h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-text {
+    margin-bottom: base.$pad;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-section {
+    padding: base.$pad;
+  }
+
+  .about {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .about-text {
+    font-size: 1.25rem;
+    width: 50%;
+    height: min-content;
+    border-left: 2px solid base.$accent-3;
+    padding: base.$pad;
+  }
+
+  .skills-wrapper {
+    width: 50%;
+  }
+
+}
