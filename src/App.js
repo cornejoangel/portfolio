@@ -63,8 +63,8 @@ const App = () => {
     'Optional dark mode',
   ];
   const articleCloneFeatures = [
-    'Accurate recreation of a professional UI',
     'Created with native HTML5 and CSS3',
+    'Accurate recreation of a professional UI',
     'Demonstrates solid fundamentals of HTML and CSS',
   ];
 
