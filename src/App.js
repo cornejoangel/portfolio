@@ -49,24 +49,22 @@ const App = () => {
   const articleCloneDescription = 'A clone of an article from NewScientist';
 
   const battleshipFeatures = [
-    'Responsive',
+    'Made with React and styled with pure CSS3',
+    'Responsive mobile layout',
     'Intuitive drag-and-drop interface for ship placement using react-dnd',
     'AI algorithm that knows when it has gotten a hit and will search for the rest of your ship until it is sunk',
     'Developed using test-driven-development with Jest',
   ];
   const kanbanFeatures = [
     'Made with React and styled with Sass',
-    'Users can create lists and cards',
-    'Intuitive interface utilizing react-beautiful-dnd library',
-    'Switch the order of lists, move cards within a list or to another',
-    'List and card names may be edited, card descriptions can be set in a pop-up screen',
-    'Cards and lists easily deleted',
-    'Entire app state saved to local storage',
+    'Implements full Create-Read-Update-Delete functionality for both lists and cards using local storage',
+    'Intuitive interface utilizing react-beautiful-dnd library: users can switch the order of lists, move cards within a list or to another',
+    'Card descriptions can be set in a pop-up modal',
     'Optional dark mode',
   ];
   const articleCloneFeatures = [
     'Accurate recreation of a professional UI',
-    'Native HTML5 and CSS3',
+    'Created with native HTML5 and CSS3',
     'Demonstrates solid fundamentals of HTML and CSS',
   ];
 
