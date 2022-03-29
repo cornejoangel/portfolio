@@ -61,7 +61,7 @@ ul {
 @media (min-width: 768px) {
   .about-section {
     padding: base.$pad;
-    width: 60%;
+    width: 80%;
     margin: base.$pad-lg auto;
   }
 
@@ -84,10 +84,4 @@ ul {
     width: 50%;
   }
 
-}
-
-@media (min-width: 769px) and (max-width: 1800px) {
-  .about-section {
-    width: 80%;
-  }
 }
