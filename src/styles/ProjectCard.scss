@@ -81,14 +81,14 @@
       width: 80%;
       margin: 0 auto;
       padding: 0;
-      text-align: end;
+      font-size: 3rem;
     }
   }
   
   .project-card {
     box-sizing: border-box;
     padding: base.$pad-lg;
-    width: 80%;
+    width: 100%;
     margin: base.$pad auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
