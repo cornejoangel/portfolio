@@ -40,7 +40,7 @@ const ProjectCard = (props) => {
           )}
           {width >= 768 && (
             <a href="#" className="svg-and-text">
-              <MdOpenInNew className="open-svg" />
+              <MdOpenInNew className="open-svg small-svg" />
               View Live
             </a>
           )}
