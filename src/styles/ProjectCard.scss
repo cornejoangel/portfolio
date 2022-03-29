@@ -9,7 +9,7 @@
   0px 1.3px 10px rgba(0, 0, 0, 0.035),
   0px 3px 24.1px rgba(0, 0, 0, 0.046),
   0px 10px 80px rgba(0, 0, 0, 0.07)
-;
+  ;
 
   .project-name {
     text-transform: capitalize;
@@ -75,21 +75,26 @@
 
 @media (min-width: 768px) {
   .projects-section {
+      padding: 0;
+      background-color: base.$gray-2;
     h2 {
       width: 80%;
       margin: 0 auto;
       padding: 0;
+      text-align: end;
     }
   }
   
   .project-card {
     box-sizing: border-box;
+    padding: base.$pad-lg;
     width: 80%;
-    margin: base.$pad-lg auto;
+    margin: base.$pad auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 5fr 1fr;
     align-items: center;
+    box-shadow: none;
   
     h3 {
       margin: 0;
@@ -109,10 +114,16 @@
       font-family: Lato, Arial, sans-serif;
     }
 
-    ul {
+    .features {
       width: 80%;
       justify-self: center;
       font-size: 1.25rem;
+      font-family: Lato, Arial, sans-serif;
+
+      li {
+        padding-left: 1rem;
+        margin: base.$pad;
+      }
     }
   }
 }
