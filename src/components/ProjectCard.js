@@ -16,34 +16,36 @@ const ProjectCard = (props) => {
 
   card = (
     <div className="project-card">
-      <h3 className="project-name">{name}</h3>
       <img src={src} alt={name} />
-      <p className="description">{description}</p>
-      <ul className="features">{featureList}</ul>
-      <nav className="project-links">
-        {width < 768 && (
-          <a href="#" className="svg-link">
-            <SiGithub className="github-link small-svg" />
-          </a>
-        )}
-        {width >= 768 && (
-          <a href="#" className="svg-and-text">
-            <SiGithub className="github-link small-svg" />
-            Source Code
-          </a>
-        )}
-        {width < 768 && (
-          <a href="#" className="svg-link">
-            <MdOpenInNew className="open-link small-svg" />
-          </a>
-        )}
-        {width >= 768 && (
-          <a href="#" className="svg-and-text">
-            <MdOpenInNew className="open-svg" />
-            View Live
-          </a>
-        )}
-      </nav>
+      <div className="card-text">
+        <h3 className="project-name">{name}</h3>
+        <p className="description">{description}</p>
+        <ul className="features">{featureList}</ul>
+        <nav className="project-links">
+          {width < 768 && (
+            <a href="#" className="svg-link">
+              <SiGithub className="github-link small-svg" />
+            </a>
+          )}
+          {width >= 768 && (
+            <a href="#" className="svg-and-text">
+              <SiGithub className="github-link small-svg" />
+              Source Code
+            </a>
+          )}
+          {width < 768 && (
+            <a href="#" className="svg-link">
+              <MdOpenInNew className="open-link small-svg" />
+            </a>
+          )}
+          {width >= 768 && (
+            <a href="#" className="svg-and-text">
+              <MdOpenInNew className="open-svg" />
+              View Live
+            </a>
+          )}
+        </nav>
+      </div>
     </div>
   );
 
