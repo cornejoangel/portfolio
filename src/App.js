@@ -8,6 +8,7 @@ import {
   SiWebpack,
   SiJest,
   SiTrello,
+  SiGit,
 } from 'react-icons/si';
 import { FaSass } from 'react-icons/fa';
 import battleship from './images/battleship.jpg';
@@ -78,6 +79,7 @@ const App = () => {
   const webpackLogo = <SiWebpack className="logo webpack-logo" />;
   const jestLogo = <SiJest className="logo jest-logo" />;
   const trelloLogo = <SiTrello className="logo trello-logo" />;
+  const gitLogo = <SiGit className="logo git-logo" />;
 
   page = (
     <main>
@@ -118,7 +120,7 @@ const App = () => {
               <SkillCard name="HTML5" logo={htmlLogo} />
               <SkillCard name="CSS3" logo={cssLogo} />
               <SkillCard name="SASS" logo={sassLogo} />
-              <SkillCard name="Github" logo={githubLogo} />
+              <SkillCard name="Git" logo={gitLogo} />
               <SkillCard name="Webpack" logo={webpackLogo} />
               <SkillCard name="Jest" logo={jestLogo} />
               <SkillCard name="Trello" logo={trelloLogo} />
