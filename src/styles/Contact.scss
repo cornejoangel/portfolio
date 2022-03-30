@@ -1,14 +1,14 @@
 @use 'base';
 
-.contact-container {
+.contact-content {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   color: base.$accent;
   text-align: center;
-  margin-bottom: base.$pad-lg;
+  padding-bottom: base.$pad-lg;
 }
 
-.contact-container a {
+.contact-content a {
   text-decoration: none;
   color: inherit;
 }
@@ -16,4 +16,21 @@
 .call-to-action {
   font-weight: 400;
   color: base.$text-color;
+}
+
+@media (min-width: 768px) {
+  .contact-section {
+    margin-top: 0;
+    padding: 0;
+    background-color: base.$gray;
+    h2 {
+      padding: 0;
+      margin: 0;
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+  .contact-content {
+    font-size: 1.25rem;
+  }
 }

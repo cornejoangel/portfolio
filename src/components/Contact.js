@@ -7,9 +7,15 @@ const Contact = (props) => {
 
   let contact = '';
   contact = (
-    <div className="contact-container">
+    <div className="contact-content">
       <p>angelcornejodev.gmail.com</p>
-      <a href="github.com/cornejoangel">github.com/cornejoangel</a>
+      <a
+        href="https://github.com/cornejoangel"
+        target="_blank"
+        rel="noreferrer"
+      >
+        github.com/cornejoangel
+      </a>
       <p className="call-to-action">Let's work together.</p>
     </div>
   );
