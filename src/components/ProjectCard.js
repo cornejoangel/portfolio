@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import uniqid from 'uniqid';
 import { MdOpenInNew } from 'react-icons/md';
 import { SiGithub } from 'react-icons/si';
 import '../styles/ProjectCard.scss';
@@ -9,7 +10,7 @@ const ProjectCard = (props) => {
 
   const featureList = [];
   for (let i = 0; i < features.length; i += 1) {
-    featureList.push(<li>{features[i]}</li>);
+    featureList.push(<li key={uniqid()}>{features[i]}</li>);
   }
 
   let card = '';
