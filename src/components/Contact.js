@@ -1,10 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import '../styles/Contact.scss';
 
-const Contact = (props) => {
-  const { width } = props;
-
+const Contact = () => {
   let contact = '';
   contact = (
     <div className="contact-content">
@@ -21,10 +18,6 @@ const Contact = (props) => {
   );
 
   return contact;
-};
-
-Contact.propTypes = {
-  width: PropTypes.number,
 };
 
 export default Contact;

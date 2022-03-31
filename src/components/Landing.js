@@ -1,9 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import '../styles/Landing.scss';
 
-const Landing = (props) => {
-  const { width } = props;
+const Landing = () => {
   let landing = '';
   landing = (
     <div className="landing">
@@ -25,10 +23,6 @@ const Landing = (props) => {
     </div>
   );
   return landing;
-};
-
-Landing.propTypes = {
-  width: PropTypes.number,
 };
 
 export default Landing;

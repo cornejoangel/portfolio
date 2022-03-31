@@ -4,7 +4,6 @@ import {
   SiReact,
   SiHtml5,
   SiCss3,
-  SiGithub,
   SiWebpack,
   SiJest,
   SiTrello,
@@ -75,7 +74,6 @@ const App = () => {
   const htmlLogo = <SiHtml5 className="logo html-logo" />;
   const cssLogo = <SiCss3 className="logo css-logo" />;
   const sassLogo = <FaSass className="logo sass-logo" />;
-  const githubLogo = <SiGithub className="logo github-logo" />;
   const webpackLogo = <SiWebpack className="logo webpack-logo" />;
   const jestLogo = <SiJest className="logo jest-logo" />;
   const trelloLogo = <SiTrello className="logo trello-logo" />;
@@ -179,7 +177,7 @@ const App = () => {
         )}
         {width >= 768 && <h2>Contact</h2>}
         <div className={`contact-container ${contactOpen ? 'open' : 'closed'}`}>
-          <Contact width={width} />
+          <Contact />
         </div>
       </section>
     </main>
