@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/battleship/static/css/main.1a029ee6.css",
-    "main.js": "/battleship/static/js/main.2e5d9a2a.js",
-    "static/media/article-clone.jpg": "/battleship/static/media/article-clone.6ddbe9488e20094d7bfe.jpg",
-    "static/media/battleship.jpg": "/battleship/static/media/battleship.4f6719dd9c4c8e0b9d6d.jpg",
-    "static/media/kanban.jpg": "/battleship/static/media/kanban.945aebc172c9e7745168.jpg",
-    "index.html": "/battleship/index.html",
-    "main.1a029ee6.css.map": "/battleship/static/css/main.1a029ee6.css.map",
-    "main.2e5d9a2a.js.map": "/battleship/static/js/main.2e5d9a2a.js.map"
+    "main.css": "/portfolio/static/css/main.1a029ee6.css",
+    "main.js": "/portfolio/static/js/main.27691734.js",
+    "static/media/article-clone.jpg": "/portfolio/static/media/article-clone.6ddbe9488e20094d7bfe.jpg",
+    "static/media/battleship.jpg": "/portfolio/static/media/battleship.4f6719dd9c4c8e0b9d6d.jpg",
+    "static/media/kanban.jpg": "/portfolio/static/media/kanban.945aebc172c9e7745168.jpg",
+    "index.html": "/portfolio/index.html",
+    "main.1a029ee6.css.map": "/portfolio/static/css/main.1a029ee6.css.map",
+    "main.27691734.js.map": "/portfolio/static/js/main.27691734.js.map"
   },
   "entrypoints": [
     "static/css/main.1a029ee6.css",
-    "static/js/main.2e5d9a2a.js"
+    "static/js/main.27691734.js"
   ]
 }
