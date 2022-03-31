@@ -6,7 +6,7 @@ import { SiGithub } from 'react-icons/si';
 import '../styles/ProjectCard.scss';
 
 const ProjectCard = (props) => {
-  const { name, description, features, width, src } = props;
+  const { name, description, features, width, src, source, live } = props;
 
   const featureList = [];
   for (let i = 0; i < features.length; i += 1) {
@@ -24,23 +24,43 @@ const ProjectCard = (props) => {
         <ul className="features">{featureList}</ul>
         <nav className="project-links">
           {width < 768 && (
-            <a href="#" className="svg-link">
+            <a
+              href={source}
+              target="_blank"
+              className="svg-link"
+              rel="noreferrer"
+            >
               <SiGithub className="github-link small-svg" />
             </a>
           )}
           {width >= 768 && (
-            <a href="#" className="svg-and-text">
+            <a
+              href={source}
+              target="_blank"
+              className="svg-and-text"
+              rel="noreferrer"
+            >
               <SiGithub className="github-link small-svg" />
               Source Code
             </a>
           )}
           {width < 768 && (
-            <a href="#" className="svg-link">
+            <a
+              href={live}
+              target="_blank"
+              className="svg-link"
+              rel="noreferrer"
+            >
               <MdOpenInNew className="open-link small-svg" />
             </a>
           )}
           {width >= 768 && (
-            <a href="#" className="svg-and-text">
+            <a
+              href={live}
+              target="_blank"
+              className="svg-and-text"
+              rel="noreferrer"
+            >
               <MdOpenInNew className="open-svg small-svg" />
               View Live
             </a>
@@ -59,6 +79,8 @@ ProjectCard.propTypes = {
   features: PropTypes.array,
   width: PropTypes.number,
   src: PropTypes.string,
+  source: PropTypes.string,
+  live: PropTypes.string,
 };
 
 export default ProjectCard;

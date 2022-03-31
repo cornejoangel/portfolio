@@ -13,7 +13,12 @@ const Landing = (props) => {
       </h2>
       <nav className="landing-links">
         <a href="#">Resume</a>
-        <a href="#" className="github-link">
+        <a
+          href="https://github.com/cornejoangel"
+          target="_blank"
+          className="github-link"
+          rel="noreferrer"
+        >
           Github
         </a>
       </nav>

@@ -146,6 +146,8 @@ const App = () => {
             features={battleshipFeatures}
             width={width}
             src={battleship}
+            source="https://github.com/cornejoangel/battleship"
+            live="https://cornejoangel.github.io/battleship/"
           />
           <ProjectCard
             name="kanban board"
@@ -153,6 +155,8 @@ const App = () => {
             features={kanbanFeatures}
             width={width}
             src={kanban}
+            source="https://github.com/cornejoangel/kanban-board"
+            live="https://cornejoangel.github.io/kanban-board/"
           />
           <ProjectCard
             name="article clone"
@@ -160,6 +164,8 @@ const App = () => {
             features={articleCloneFeatures}
             width={width}
             src={article}
+            source="https://github.com/cornejoangel/article-clone"
+            live="https://cornejoangel.github.io/article-clone/"
           />
         </div>
       </section>
