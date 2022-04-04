@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.1a029ee6.css",
-    "main.js": "/portfolio/static/js/main.5e0869c3.js",
-    "static/media/article-clone.jpg": "/portfolio/static/media/article-clone.6ddbe9488e20094d7bfe.jpg",
-    "static/media/battleship.jpg": "/portfolio/static/media/battleship.4f6719dd9c4c8e0b9d6d.jpg",
-    "static/media/kanban.jpg": "/portfolio/static/media/kanban.945aebc172c9e7745168.jpg",
-    "index.html": "/portfolio/index.html",
-    "main.1a029ee6.css.map": "/portfolio/static/css/main.1a029ee6.css.map",
-    "main.5e0869c3.js.map": "/portfolio/static/js/main.5e0869c3.js.map"
+    "main.css": "/www.angelcornejo.com/static/css/main.1a029ee6.css",
+    "main.js": "/www.angelcornejo.com/static/js/main.30f8d3cb.js",
+    "static/media/article-clone.jpg": "/www.angelcornejo.com/static/media/article-clone.6ddbe9488e20094d7bfe.jpg",
+    "static/media/battleship.jpg": "/www.angelcornejo.com/static/media/battleship.4f6719dd9c4c8e0b9d6d.jpg",
+    "static/media/kanban.jpg": "/www.angelcornejo.com/static/media/kanban.945aebc172c9e7745168.jpg",
+    "index.html": "/www.angelcornejo.com/index.html",
+    "main.1a029ee6.css.map": "/www.angelcornejo.com/static/css/main.1a029ee6.css.map",
+    "main.30f8d3cb.js.map": "/www.angelcornejo.com/static/js/main.30f8d3cb.js.map"
   },
   "entrypoints": [
     "static/css/main.1a029ee6.css",
-    "static/js/main.5e0869c3.js"
+    "static/js/main.30f8d3cb.js"
   ]
 }
