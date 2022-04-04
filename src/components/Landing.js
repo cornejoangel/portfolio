@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/Landing.scss';
+import resume from '../docs/angel-cornejo-resume.pdf';
 
 const Landing = () => {
   let landing = '';
@@ -10,7 +11,9 @@ const Landing = () => {
         My name is Angel Cornejo and I'm a software developer.
       </h2>
       <nav className="landing-links">
-        <a href="#">Resume</a>
+        <a href={resume} target="_blank" rel="noreferrer">
+          Resume
+        </a>
         <a
           href="https://github.com/cornejoangel"
           target="_blank"
