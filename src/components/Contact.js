@@ -5,7 +5,7 @@ const Contact = () => {
   let contact = '';
   contact = (
     <div className="contact-content">
-      <p>angelcornejodev.gmail.com</p>
+      <p>angelcornejodev@gmail.com</p>
       <a
         href="https://github.com/cornejoangel"
         target="_blank"
