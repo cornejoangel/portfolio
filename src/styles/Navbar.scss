@@ -1,0 +1,18 @@
+@use 'base';
+
+
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: sticky;
+  align-items: center;
+
+  ul {
+    display: flex;
+  }
+}
+
+.selected {
+  background-color: base.$accent;
+}
