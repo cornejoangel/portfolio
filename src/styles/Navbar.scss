@@ -8,11 +8,45 @@ nav {
   position: sticky;
   align-items: center;
 
+  .angel {
+    padding-left: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+  }
+
   ul {
     display: flex;
+    margin: 0;
+
+    li:hover {
+      background-color: base.$gray-2;
+    }
+
+    button {
+      border: none;
+      padding: 1rem;
+      background-color: inherit;
+      color: base.$text-color;
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      font-weight: 400;
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+      padding: 1rem;
+      background-color: inherit;
+      color: base.$text-color;
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      font-weight: 400;
+    }
   }
 }
 
+
 .selected {
-  background-color: base.$accent;
+  border-bottom: 2px solid base.$accent;
 }
