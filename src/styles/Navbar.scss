@@ -55,15 +55,18 @@ nav {
   border-bottom: 2px solid base.$accent;
 }
 
-.menu {
+.menu-toggle {
   display: none;
 }
 
 @media (max-width: 768px) {
-  .menu {
+  .menu-toggle {
     display: block;
-    margin-right: 1rem;
     margin: auto;
+    border: none;
+    background-color: inherit;
+    font-size: 1.5rem;
+    display: flex;
   }
 
   nav .angel {

@@ -1,21 +1,24 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import { MdMenu, MdOutlineClose } from 'react-icons/md';
 import '../styles/Navbar.scss';
 import resume from '../docs/angel-cornejo-resume.pdf';
 
 const Navbar = (props) => {
   const { currentTab, changeTab } = props;
   const [menuOpen, setMenuOpen] = useState(false);
+  const menu = <MdMenu className="icon menu-icon" />;
+  const close = <MdOutlineClose className="icon close-icon" />;
 
   return (
     <nav>
       <div className="angel">Angel Cornejo</div>
       <button
         type="button"
-        className="menu"
+        className="menu-toggle"
         onClick={() => setMenuOpen(!menuOpen)}
       >
-        menu
+        {menuOpen ? close : menu}
       </button>
       <ul className={menuOpen ? 'open' : ''}>
         <li className={currentTab === 'portfolio' ? 'selected' : ''}>
