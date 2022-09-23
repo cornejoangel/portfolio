@@ -78,8 +78,8 @@
       cursor: pointer;
       background: inherit;
       border-radius: 3px;
-      padding: .5rem 0;
-      width: 9rem;
+      padding: .75rem 0;
+      width: 11rem;
       background-color: base.$accent;
       color: white;
       font-weight: 600;
@@ -93,5 +93,24 @@
       height: 1.2em;
     }
 
+  }
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    .project-links {
+      .svg-and-text {
+        width: 30%;
+      }
+
+      .small-svg {
+        margin-right: 0;
+      }
+
+      .link-text {
+        display: none;
+      }
+
+    }
   }
 }

@@ -37,7 +37,7 @@ const ProjectCard = (props) => {
             rel="noreferrer"
           >
             <SiGithub className="github-link small-svg" />
-            Source Code
+            <div className="link-text">Source Code</div>
           </a>
 
           <a
@@ -47,7 +47,7 @@ const ProjectCard = (props) => {
             rel="noreferrer"
           >
             <MdOpenInNew className="open-svg small-svg" />
-            View Live
+            <div className="link-text">View Live</div>
           </a>
         </div>
       </div>
