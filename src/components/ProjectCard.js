@@ -3,14 +3,16 @@ import PropTypes from 'prop-types';
 import uniqid from 'uniqid';
 import { MdOpenInNew } from 'react-icons/md';
 import { SiGithub } from 'react-icons/si';
+import { RiPriceTag3Line } from 'react-icons/ri';
+
 import '../styles/ProjectCard.scss';
 
 const ProjectCard = (props) => {
-  const { name, description, features, width, src, source, live } = props;
+  const { name, description, tech, src, source, live } = props;
 
-  const featureList = [];
-  for (let i = 0; i < features.length; i += 1) {
-    featureList.push(<li key={uniqid()}>{features[i]}</li>);
+  const techList = [];
+  for (let i = 0; i < tech.length; i += 1) {
+    techList.push(<li key={uniqid()}>{tech[i]}</li>);
   }
 
   let card = '';
@@ -21,50 +23,32 @@ const ProjectCard = (props) => {
       <div className="card-text">
         <h3 className="project-name">{name}</h3>
         <p className="description">{description}</p>
-        <ul className="features">{featureList}</ul>
+        <ul className="tech">
+          <li className="tag-icon-container">
+            <RiPriceTag3Line className="tag" />
+          </li>
+          {techList}
+        </ul>
         <nav className="project-links">
-          {width < 768 && (
-            <a
-              href={source}
-              target="_blank"
-              className="svg-link"
-              rel="noreferrer"
-            >
-              <SiGithub className="github-link small-svg" />
-            </a>
-          )}
-          {width >= 768 && (
-            <a
-              href={source}
-              target="_blank"
-              className="svg-and-text"
-              rel="noreferrer"
-            >
-              <SiGithub className="github-link small-svg" />
-              Source Code
-            </a>
-          )}
-          {width < 768 && (
-            <a
-              href={live}
-              target="_blank"
-              className="svg-link"
-              rel="noreferrer"
-            >
-              <MdOpenInNew className="open-link small-svg" />
-            </a>
-          )}
-          {width >= 768 && (
-            <a
-              href={live}
-              target="_blank"
-              className="svg-and-text"
-              rel="noreferrer"
-            >
-              <MdOpenInNew className="open-svg small-svg" />
-              View Live
-            </a>
-          )}
+          <a
+            href={source}
+            target="_blank"
+            className="svg-and-text"
+            rel="noreferrer"
+          >
+            <SiGithub className="github-link small-svg" />
+            Source Code
+          </a>
+
+          <a
+            href={live}
+            target="_blank"
+            className="svg-and-text"
+            rel="noreferrer"
+          >
+            <MdOpenInNew className="open-svg small-svg" />
+            View Live
+          </a>
         </nav>
       </div>
     </div>
@@ -76,8 +60,7 @@ const ProjectCard = (props) => {
 ProjectCard.propTypes = {
   name: PropTypes.string,
   description: PropTypes.string,
-  features: PropTypes.array,
-  width: PropTypes.number,
+  tech: PropTypes.array,
   src: PropTypes.string,
   source: PropTypes.string,
   live: PropTypes.string,
