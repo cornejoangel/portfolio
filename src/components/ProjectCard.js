@@ -29,7 +29,7 @@ const ProjectCard = (props) => {
           </li>
           {techList}
         </ul>
-        <nav className="project-links">
+        <div className="project-links">
           <a
             href={source}
             target="_blank"
@@ -49,7 +49,7 @@ const ProjectCard = (props) => {
             <MdOpenInNew className="open-svg small-svg" />
             View Live
           </a>
-        </nav>
+        </div>
       </div>
     </div>
   );
