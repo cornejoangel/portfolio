@@ -1,16 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import '../styles/Navbar.scss';
 import resume from '../docs/angel-cornejo-resume.pdf';
 
 const Navbar = (props) => {
   const { currentTab, changeTab } = props;
-  console.log(currentTab);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <nav>
       <div className="angel">Angel Cornejo</div>
-      <ul>
+      <button
+        type="button"
+        className="menu"
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        menu
+      </button>
+      <ul className={menuOpen ? 'open' : ''}>
         <li className={currentTab === 'portfolio' ? 'selected' : ''}>
           <button type="button" onClick={(e) => changeTab(e, 'portfolio')}>
             Portfolio

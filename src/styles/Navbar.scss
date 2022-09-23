@@ -1,5 +1,6 @@
 @use 'base';
 
+$nav-width: 3rem;
 
 nav {
   display: flex;
@@ -7,6 +8,8 @@ nav {
   justify-content: space-between;
   position: sticky;
   align-items: center;
+  height: $nav-width;
+  background-color: white;
 
   .angel {
     padding-left: 2rem;
@@ -42,6 +45,7 @@ nav {
       font-family: 'Inter', sans-serif;
       font-size: 1rem;
       font-weight: 400;
+      box-sizing: border-box;
     }
   }
 }
@@ -49,4 +53,48 @@ nav {
 
 .selected {
   border-bottom: 2px solid base.$accent;
+}
+
+.menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: block;
+    margin-right: 1rem;
+    margin: auto;
+  }
+
+  nav .angel {
+    padding-left: 1rem;
+  }
+
+  nav ul {
+    display: none;
+    position: absolute;
+    top: $nav-width;
+    background-color: white;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - $nav-width);
+
+    button,
+    a {
+      width: 95%;
+      padding: 1rem;
+      text-align: start;
+    }
+
+  }
+
+  .selected {
+    border: none;
+    border-right: 4px solid base.$accent;
+    background-color: base.$accent-3;
+  }
+
+  nav ul.open {
+    display: block;
+  }
 }
