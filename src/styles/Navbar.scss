@@ -76,7 +76,7 @@ nav {
     display: none;
     position: absolute;
     top: $nav-width;
-    background-color: white;
+    background-color: base.$bg-3;
     flex-direction: column;
     width: 100%;
     height: calc(100vh - $nav-width);
