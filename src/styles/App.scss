@@ -3,7 +3,6 @@
 body {
   margin: 0;
   font-size: 16px;
-  padding: base.$pad;
   color: base.$text-color;
 }
 
@@ -28,26 +27,20 @@ ul {
   display: none !important;
 }
 
-.skills-container {
-  display: flex;
-  width: 100%;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.about-text {
-  font-family: Lato, Arial, sans-serif;
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-
-.skills-wrapper {
-  border: 2px solid #ebebeb;
-  border-radius: 3px;
+.about {
+  padding-left: 1rem;
+  width: 235px;
+  font-family: 'Inter', sans-serif;
 
   h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 200;
+    margin: 0;
+    text-align: center;
+    color: base.$accent;
+    font-weight: 600;
+  }
+
+  p {
+    margin: 0;
     text-align: center;
   }
 }
@@ -59,29 +52,7 @@ ul {
 }
 
 @media (min-width: 768px) {
-  .about-section {
-    padding: base.$pad;
-    width: 80%;
-    margin: base.$pad-lg auto;
-  }
-
   .about {
-    display: flex;
-    width: 100%;
-    justify-content: center;
+    padding-left: 2rem;
   }
-
-  .about-text {
-    font-size: 1.25rem;
-    width: 50%;
-    height: min-content;
-    border-left: 2px solid base.$accent-3;
-    padding: base.$pad;
-    line-height: 2rem;
-  }
-
-  .skills-wrapper {
-    width: 50%;
-  }
-
 }

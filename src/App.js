@@ -14,7 +14,10 @@ const App = () => {
     <div className="app">
       <Navbar currentTab={currentTab} changeTab={changeTab} />
       <main>
-        <div className="blurb">Software Developer</div>
+        <div className="about">
+          <h3>Software Developer</h3>
+          <p>Always striving for growth</p>
+        </div>
       </main>
     </div>
   );
