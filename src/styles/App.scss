@@ -46,6 +46,13 @@ ul {
   }
 }
 
+.projects {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
 @media (max-width: 768px) {
   .about-text {
     margin-bottom: base.$pad;

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './styles/App.scss';
 import battleship from './images/battleship.jpg';
+import kanban from './images/kanban.jpg';
 import Navbar from './components/Navbar';
 import ProjectCard from './components/ProjectCard';
 
@@ -16,6 +17,10 @@ const App = () => {
     'An Implementation of the classic game Battleship.';
 
   const battleshipTech = ['React,', 'CSS,', 'Jest,', 'react-dnd'];
+
+  const kanbanDescription = 'A Trello inspired kanban board.';
+
+  const kanbanTech = ['React,', 'Sass,', 'react-beautiful-dnd'];
 
   page = (
     <div className="app">
@@ -33,6 +38,14 @@ const App = () => {
             src={battleship}
             source="https://github.com/cornejoangel/battleship"
             live="https://cornejoangel.github.io/battleship/"
+          />
+          <ProjectCard
+            name="kanban board"
+            description={kanbanDescription}
+            tech={kanbanTech}
+            src={kanban}
+            source="https://github.com/cornejoangel/kanban-board"
+            live="https://cornejoangel.github.io/kanban-board/"
           />
         </div>
       </main>
