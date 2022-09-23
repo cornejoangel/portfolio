@@ -23,12 +23,12 @@ const ProjectCard = (props) => {
       <div className="card-text">
         <h3 className="project-name">{name}</h3>
         <p className="description">{description}</p>
-        <ul className="tech">
-          <li className="tag-icon-container">
+        <div className="tech-container">
+          <div className="tag-icon-container">
             <RiPriceTag3Line className="tag" />
-          </li>
-          {techList}
-        </ul>
+          </div>
+          <ul className="tech">{techList}</ul>
+        </div>
         <div className="project-links">
           <a
             href={source}
