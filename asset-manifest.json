@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.fec46956.css",
+    "main.css": "/static/css/main.db64c975.css",
     "main.js": "/static/js/main.acaaca77.js",
     "static/media/angel-cornejo-resume.pdf": "/static/media/angel-cornejo-resume.3c56c2c3a4c54d759bc1.pdf",
     "static/media/blog.jpg": "/static/media/blog.f14e0fa5de744984e8ae.jpg",
     "static/media/battleship.jpg": "/static/media/battleship.4f6719dd9c4c8e0b9d6d.jpg",
     "static/media/kanban.jpg": "/static/media/kanban.945aebc172c9e7745168.jpg",
     "index.html": "/index.html",
-    "main.fec46956.css.map": "/static/css/main.fec46956.css.map",
+    "main.db64c975.css.map": "/static/css/main.db64c975.css.map",
     "main.acaaca77.js.map": "/static/js/main.acaaca77.js.map"
   },
   "entrypoints": [
-    "static/css/main.fec46956.css",
+    "static/css/main.db64c975.css",
     "static/js/main.acaaca77.js"
   ]
 }
