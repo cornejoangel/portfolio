@@ -12,6 +12,7 @@ nav {
   height: $nav-width;
   background-color: base.$bg-4;
   backdrop-filter: blur(20px);
+  z-index: 2;
 
   .angel {
     padding-left: 2rem;
