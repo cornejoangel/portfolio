@@ -26,7 +26,7 @@ nav {
     margin: 0;
 
     li:hover {
-      background-color: base.$accent-3;
+      background-color: base.$accent-4;
     }
 
     button {
@@ -43,7 +43,6 @@ nav {
       display: block;
       text-decoration: none;
       padding: 1rem;
-      background-color: inherit;
       color: base.$text-color;
       font-family: 'Inter', sans-serif;
       font-size: 1rem;
@@ -69,6 +68,7 @@ nav {
     background: none;
     font-size: 1.5rem;
     display: flex;
+    color: base.$text-color;
   }
 
   nav .angel {
