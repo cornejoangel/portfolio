@@ -13,9 +13,10 @@ nav {
   background-color: base.$bg-4;
   backdrop-filter: blur(20px);
   z-index: 2;
+  margin-top: 2rem;
 
   .angel {
-    padding-left: 2rem;
+    padding-left: 10%;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 2rem;
@@ -24,6 +25,7 @@ nav {
   ul {
     display: flex;
     margin: 0;
+    padding-right: 10%;
 
     li:hover {
       background-color: base.$accent-4;
@@ -71,6 +73,10 @@ nav {
     color: base.$text-color;
   }
 
+  nav {
+    margin-top: 0;
+  }
+
   nav .angel {
     padding-left: 1rem;
   }
@@ -84,6 +90,7 @@ nav {
     flex-direction: column;
     width: 100%;
     height: calc(100vh - $nav-width);
+    padding: 0;
 
     button,
     a {
