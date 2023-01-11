@@ -45,7 +45,7 @@ const Portfolio = () => {
           tech={blogTech}
           src={blog}
           source="https://github.com/cornejoangel/blog-api"
-          live="https://cryptic-cove-57692.herokuapp.com/"
+          live="https://social-blog.herokuapp.com/"
         />
         <ProjectCard
           name="kanban board"
