@@ -39,14 +39,14 @@ const Portfolio = () => {
           source="https://github.com/cornejoangel/battleship"
           live="https://cornejoangel.github.io/battleship/"
         />
-        <ProjectCard
+        {/* <ProjectCard
           name="social blog"
           description={blogDescription}
           tech={blogTech}
           src={blog}
           source="https://github.com/cornejoangel/blog-api"
           live="https://social-blog.herokuapp.com/"
-        />
+        /> */}
         <ProjectCard
           name="kanban board"
           description={kanbanDescription}
